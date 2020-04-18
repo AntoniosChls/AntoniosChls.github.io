@@ -1,0 +1,498 @@
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome and Opera */
+  }
+  * {
+    font-family: 'Righteous', cursive;
+  }
+  html {
+    scroll-behavior: smooth;
+    color:Black;
+  }
+  
+  body {
+    overflow:hidden;
+  }
+  /* preloader */ 
+  .preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 60px;
+    margin: -30px 0 0 -40px;
+    z-index:9999;
+  }
+  #preloader {
+    height:100vh;
+    background-color:gray;
+    z-index:9998;
+  }
+  .preloader .lines {
+    width: 80px;
+    height: 40px;
+    position: absolute;
+  }
+  .preloader .lines .line {
+    width: 80px;
+    height: 10px;
+    background-color: #4f90cd;
+    position: absolute;
+    clip: rect(0, 0, 20px, 0);
+  }
+  .preloader .lines .line.line-1 {
+    top: 0;
+    -webkit-animation: slide 2s ease 0s infinite;
+    animation: slide 2s ease 0s infinite;
+  }
+  .preloader .lines .line.line-2 {
+    top: 15px;
+    -webkit-animation: slide 2s ease 0.25s infinite;
+    animation: slide 2s ease 0.25s infinite;
+  }
+  .preloader .lines .line.line-3 {
+    top: 30px;
+    -webkit-animation: slide 2s ease 0.5s infinite;
+    animation: slide 2s ease 0.5s infinite;
+  }
+  .preloader .loading-text {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    width: 100%;
+    color: #4f90cd;
+    font-size: 13px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    line-height: 10px;
+    height: 10px;
+    -webkit-animation: fade 1s ease 0s infinite;
+    animation: fade 1s ease 0s infinite;
+  }
+
+  @-webkit-keyframes slide {
+    0% {
+      clip: rect(0, 0, 20px, 0);
+    }
+    30% {
+      clip: rect(0, 80px, 20px, 0);
+    }
+    50% {
+      clip: rect(0, 80px, 20px, 0);
+    }
+    80% {
+      clip: rect(0, 80px, 20px, 80px);
+    }
+    100% {
+      clip: rect(0, 80px, 20px, 80px);
+    }
+  }
+
+  @keyframes slide {
+    0% {
+      clip: rect(0, 0, 20px, 0);
+    }
+    30% {
+      clip: rect(0, 80px, 20px, 0);
+    }
+    50% {
+      clip: rect(0, 80px, 20px, 0);
+    }
+    80% {
+      clip: rect(0, 80px, 20px, 80px);
+    }
+    100% {
+      clip: rect(0, 80px, 20px, 80px);
+    }
+  }
+  @-webkit-keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  #navBg {
+    background-color:black;
+
+  }
+
+  #secondSection {
+
+    height:100vh;
+    width:100%;
+  }
+  #secondSectionBg {
+    width:100%;
+    height:100vh;
+    color:white;
+    background-image:url("../photos/secondSectionBg.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+  }
+  #thirdSectionBg {
+    width:100%;
+
+    color:white;
+    background-image:url("../photos/thirdSectionBg.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+
+  }
+  .projectfield {
+    margin-top:-10px !important;
+    height:220px;
+    margin:0px;
+    margin-top:30px;
+  }
+  .projectfield:hover {
+    animation:letteranimation 0.2s linear;
+    cursor:pointer;
+
+  } 
+  #projectfield1 {
+
+    background-image: url(../photos/cmsCover.png);
+    background-size:cover;
+
+
+  }
+  #projectfield2 {
+    background-image: url(../photos/miniAssetsCover.png);
+    background-size:cover;
+
+
+  }
+  #projectfield3 {
+    background-image: url(../photos/animationInWebCover.png);
+    background-size:cover;
+  }
+  #projectfield4 {
+    background-image: url(../photos/imageGalleryCover.png);
+    background-size:cover;
+  }
+  #projectfield5 {
+    background-image: url(../photos/formValidationJSCover.png);
+    background-size:cover;
+  }
+  #projectfield6 {
+    background-image: url(../photos/liveSearchCover.png);
+    background-size:cover;
+  }
+  #projectfield7 {
+    background-image: url(../photos/formValidationPHPCover.png);
+    background-size:cover;
+  }
+  #projectfield8 {
+    background-image: url(../photos/loginRegistrationCover.png);
+    background-size:cover;
+  }
+  #projectfield9 {
+    background-image: url(../photos/studentLoungeCover.png);
+    background-size:cover;
+  }
+  #projectfield8 {
+    background-image: url(../photos/loginRegistrationCover.png);
+    background-size:cover;
+  }
+  .beblue {
+    color:#4f90cd !important;
+  }
+  .bewhite {
+    color:white !important;
+  }
+  .bgColor {
+    background-color:white;
+    opacity:0.8;
+    text-align: center;
+    width:100%;
+  }
+
+  #formdocs {
+    color:#4f90cd;
+  }
+  #WebDeveloper {
+    float:left;
+  }
+  #WebDesigner {
+    float:left;
+  }
+  header{
+    position:fixed;
+    width:100%;
+    background-color:black;
+    z-index:500;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    
+  }
+  p {
+    color:black !important;
+  }
+
+  a{
+    color:white !important;
+  }
+  #intro {
+    color:Black;
+  }
+  .point {
+    position:relative;
+    top:-60px;
+
+  }
+  .burger {
+
+    color:#4f90cd;
+    background-color:black;
+    display:block;
+    font-size:30px;
+    cursor:pointer;
+    padding:7px;
+    float:left;
+  }
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #4f90cd !important;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: -10;
+    right: 0px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  @media only screen and (max-width: 600px) {
+    #thirdSectionBg{
+      background-image:none;
+    }
+    .projectfield{
+      margin:60px !important;
+
+    }
+  }
+
+  h2 {
+    color:black!important;
+
+
+  }
+  #underline {
+    border-bottom:2px solid #4f90cd;
+  }
+  .formErrors {
+    color:red !important;
+    display:inline-block !important;
+    font-size: 1em !important;
+
+  }
+  #form {
+    text-align: center;
+
+  }
+  #contactBg {
+    background-image:url(../photos/contactbg.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    width:100% !important;
+    height:100vh;
+  }
+
+  /* input fields style */
+
+  .inputs {
+    width:70%;
+    height: 50px;
+    margin:0 !important;
+    color:black;
+    padding:0 !important;
+    background-color:white;
+    opacity:0.8;
+    border:2px solid #4f90cd;
+  }
+  #message {
+
+    height:100px;
+  }
+  .inputs:focus {
+    outline-color: #4f90cd;
+  }
+  .inputs:hover {
+    border-bottom: 2px solid #4f90cd;
+  }
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #4f90cd;
+    text-align:center;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #4f90cd;
+    text-align:center;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #4f90cd;
+    text-align:center;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #4f90cd;
+    text-align:center;
+  }
+  /* Buttons style */
+
+  button {
+
+    color: white;
+    padding: 14px 20px;
+    margin-left:auto;
+    margin-right:auto;
+    border: none;
+    cursor: pointer;
+    width: 95px;
+    opacity: 0.9;
+
+  }
+  button:hover {
+    opacity: 1;
+  }
+  button:focus {
+    outline: none;
+  }
+  #submit_Button {
+    background-color:#4f90cd;
+    color:white;
+  }
+  #reset_Button {
+    background-color:white;
+    color:#4f90cd;
+  }
+  #getInTouchButton {
+    background-color:#4f90cd;
+    color:white;
+    width:200px;
+    text-align:center !important;
+  }
+
+
+  /* First Section */
+
+  #firstSectionBg {
+    width:100%;
+    height:100vh;
+    color:white;
+    background-image:url("../photos/firstSectionBg.jpg");
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+
+
+  }
+
+
+  .heading {
+    font-size:50px;
+    color:black;
+    text-align:center;
+
+  }
+  .letterAnimation {
+    transition: all  ease-in-out;
+    color:#4f90cd;
+    position:relative;
+  }
+  .letterAnimation:hover {
+    color:black;
+    transform: scale(1.1);
+    animation:letteranimation 0.2s linear;
+  }
+  .skills {
+    color:black;
+    font-size:14px !important;
+    position:relative;
+    top:-20px;
+
+  }
+
+  .justLetter {
+    color:#ff86ca;
+  }
+  .justLetter:hover {
+    color:#08fdd8;
+  }
+
+
+  #footerBg {
+    border-top:solid black 2px;
+    background-color: white;
+    width:100%;
+    height:120px;
+
+  }
+  .socialmediaicon {
+    margin:5px;
+  }
+  @media screen and (max-width: 995px) {
+    .heading {
+      font-size:30px; 
+    }
+
+  }
+  @keyframes letteranimation {
+    0% {
+      top:0px;
+    }
+    50% {
+      top:-10px;
+    }
+    100% {
+      top:0px;
+    }
+
+  }
