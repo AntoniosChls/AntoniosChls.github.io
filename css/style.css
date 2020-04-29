@@ -19,7 +19,7 @@
     font-family: 'trickshot';
 }
 
-body {
+html, body {
     overflow: hidden !important;
 }
 
@@ -85,7 +85,8 @@ footer {
         font-size: 40px;
         -webkit-text-stroke: 1px white;
     }
+
     footer {
-        font-size:12px;
+        font-size: 12px;
     }
 }
